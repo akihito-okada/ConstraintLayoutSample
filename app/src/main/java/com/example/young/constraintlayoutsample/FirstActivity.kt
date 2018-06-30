@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity
 import android.transition.TransitionManager
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.layout_c_placeholder.*
+import kotlinx.android.synthetic.main.layout_d_placeholder.*
 
 class FirstActivity : AppCompatActivity() {
 
@@ -21,7 +21,7 @@ class FirstActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout_c_placeholder)
+        setContentView(R.layout.layout_d_placeholder)
 
         val onClickListener: View.OnClickListener = View.OnClickListener { view ->
             if (SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -32,7 +32,7 @@ class FirstActivity : AppCompatActivity() {
             placeholder.setContentId(view.id)
         }
 
-        // 各ViewにEventを追加
+        // click eventを追加
         left.setOnClickListener(onClickListener)
         center.setOnClickListener(onClickListener)
         right.setOnClickListener(onClickListener)

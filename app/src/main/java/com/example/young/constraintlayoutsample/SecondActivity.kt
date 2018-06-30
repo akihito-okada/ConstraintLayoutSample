@@ -10,7 +10,7 @@ import android.transition.TransitionManager
 import android.view.View
 import android.support.constraint.ConstraintSet
 
-import kotlinx.android.synthetic.main.layout_d_animation_first.*
+import kotlinx.android.synthetic.main.layout_e_animation_first.*
 
 class SecondActivity : AppCompatActivity() {
 
@@ -26,18 +26,18 @@ class SecondActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout_d_animation_first)
+        setContentView(R.layout.layout_e_animation_first)
 
         // Viewの状態(ConstraintSet)を保持
         constraintSetFirst.clone(root)
-        constraintSetSecond.clone(this, R.layout.layout_d_animation_second)
+        constraintSetSecond.clone(this, R.layout.layout_e_animation_second)
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
             // KitKat以下は非対応 (T_T)
             return
         }
 
-        // eventをセット
+        // click eventをセット
         val onClickListener = View.OnClickListener {
             transition()
         }

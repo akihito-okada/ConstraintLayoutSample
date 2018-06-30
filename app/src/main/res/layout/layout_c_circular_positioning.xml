@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    ★
+    layout_constraintCircle
+    layout_constraintCircleAngle
+    layout_constraintDimensionRatio
+    -->
+    <ImageView
+        android:id="@+id/center"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/ic_round_stars_48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintDimensionRatio="w, 1:1"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/star_boarder"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/ic_round_star_border_48dp"
+        app:layout_constraintCircle="@+id/center"
+        app:layout_constraintCircleAngle="150"
+        app:layout_constraintCircleRadius="200dp"
+        app:layout_constraintDimensionRatio="w, 1:1"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/star_half"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/ic_round_star_half_48dp"
+        app:layout_constraintCircle="@+id/center"
+        app:layout_constraintCircleAngle="289"
+        app:layout_constraintCircleRadius="100dp"
+        app:layout_constraintDimensionRatio="w, 1:1"
+        tools:ignore="ContentDescription" />
+
+</android.support.constraint.ConstraintLayout>
