@@ -15,6 +15,7 @@ class StartActivity : AppCompatActivity() {
         first.setOnClickListener {
             startActivity(FirstActivity.getIntent(this))
         }
+
         second.setOnClickListener {
             startActivity(SecondActivity.getIntent(this))
         }
