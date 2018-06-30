@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ConstraintLayoutSample</string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="title_activity_second">StartActivity</string>
+    <string name="layout_c_sample">layout c sample</string>
+    <string name="layout_d_sample">layout d sample</string>
 </resources>
